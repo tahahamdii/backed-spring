@@ -134,16 +134,12 @@ foyerRepository.delete(f);
      universiteRepository.save(uni);
      return foyer;
     }
+
     @Override
     public Universite affecterFoyerAUniversite(long idFoyer, String nomUniversite) {
-        Foyer foyer = foyerRepository.findById(idFoyer).orElse(null);
-        List<Universite> universites = universiteRepository.findByNomUniversite(nomUniversite);
-        Universite universite = universites.get(0);
-        universite.setFoyer(foyer);
-        universiteRepository.save(universite);
-
-        return universite;
+        return null;
     }
+
     @Override
     public Universite desaffecterFoyerAUniversite(long idUniversite) {
         Universite universite = universiteRepository.findById(idUniversite).orElse(null);
