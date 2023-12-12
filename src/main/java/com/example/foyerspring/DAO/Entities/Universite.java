@@ -20,7 +20,7 @@ public class Universite {
     private String nomUniversite;
 
     @Column(name = "adress")
-    private String adress;
+    private String Adresse;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JsonIgnore

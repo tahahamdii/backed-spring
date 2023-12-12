@@ -1,4 +1,4 @@
-package tn.esprit.spring.DAO.Services.Universite;
+package com.example.foyerspring.Services;
 
 import com.example.foyerspring.DAO.Entities.Foyer;
 import com.example.foyerspring.DAO.Entities.Universite;
